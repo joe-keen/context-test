@@ -13,6 +13,6 @@ func Set(ctx context.Context) context.Context {
 }
 
 func Get(ctx context.Context) string {
-	val := ctx.Value(id).(string)
+	val := ctx.Value(contextKeyA).(string)
 	return val
 }
